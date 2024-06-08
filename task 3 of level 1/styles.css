@@ -1,0 +1,54 @@
+body {
+    background-color: black; /* Main page background color */
+}
+
+.calculator {
+    width: 300px;
+    margin: 50px auto;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: #333; /* Calculator background color */
+}
+
+.display {
+    height: 50px;
+    background-color: #f8f8f8;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0 10px;
+    font-size: 24px;
+    color: black; /* Display text color */
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 5px;
+}
+
+button {
+    height: 50px;
+    background-color: #f0f0f0;
+    border: none;
+    border-radius: 40%;
+    font-size: 18px;
+    font-weight: bold; /* Increase font weight */
+    cursor: pointer;
+}
+
+button.white-bg {
+    background-color: white; /* White background for specific buttons */
+}
+
+button.red-bg {
+    background-color: red; /* Red background for the "=" button */
+}
+
+button:hover {
+    background-color: #e0e0e0;
+}
